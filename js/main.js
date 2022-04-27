@@ -2,7 +2,7 @@ let raceNumber = Math.floor(Math.random() * 1000);
 
 let registeredEarly = true;
 
-let runnersAge = 18;
+let runnersAge = 20;
 
 // Checking Runners who registered Early & Adults.
 if (registeredEarly && runnersAge > 18) {
