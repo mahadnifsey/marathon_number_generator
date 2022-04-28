@@ -1,0 +1,63 @@
+*{
+  font-family: Arial;
+  margin: 0 0;
+}
+
+#header {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ebff00;
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  
+}
+
+#main {
+  width: 100%;
+  height: 90vh;
+  margin-top: 5rem;
+  border: 2px dotted black;
+  display: flex;
+  justify-content: space-around
+}
+
+#user_form {
+  width: 30%;
+  height: 90%;
+  background-color: turquoise;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.5rem 0.5rem grey;
+}
+
+#race_detail {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#race_detail > section {
+
+}
+
+#race_info {
+  height: 25%;
+  width: 40%;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem grey;
+}
+
+#race_card {
+  height: 70%;
+  width: 100%;
+  background-color: grey;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem grey;
+}
