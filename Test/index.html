@@ -4,7 +4,7 @@
     	<meta charset="utf-8">
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
-
+		
 		<title>Race Day Project</title>
 
 		<!-- external CSS link -->
@@ -13,19 +13,73 @@
 	</head>
 	<body>
 		<section id="header">
-			<h1>Yokahoma Marathon Registration 2022</h1>
-			<p>Take your place on the Yokahoma marathon start line! Yokahoma’s biggest and best running event returns to the city’s streets in May!</p>
+			<img id="ymlogo" src="img/Yokahoma Marathon Logo.png">
+			<section id="headertext">
+				<h1>Yokahoma Marathon Registration 2022</h1>
+				<p>Take your place on the Yokahoma marathon start line! Yokahoma’s biggest and best running event returns to the city’s streets in May!</p>
+			</section>
 		</section>
 		<section id="main">
-			<section id="user_form"></section>
+			<section id="user_form">
+				<div id="header_form">
+					<h1>Race Registration Form</h1>
+					<p>Thank you for participating at this Year's Marathon Event. Please fill in the required information below to register.</p>
+				</div>
+				<div class="container">
+					<!-- Form -->
+					  <form action="/action_page.php">
+						<input type="text" name="firstname" placeholder="First...">
+						<input type="text" name="lastname" placeholder="Last...">
+						<input type="text" name="email" placeholder="Email...">
+						<input type="text" name="phone" placeholder="Phone...">
+						<input type="text" name="gender" placeholder="Gender...">
+						<input type="date" id="DOB" name="birthday">
+						<!-- Drop Down Menu -->
+						<section id="medquest">
+						  <label for="medical">Do you suffer from any medical conditions?</label>
+						  <select id="medical" name="medical">
+							<option value="yes">Yes</option>
+							<option value="no">No</option>
+						  </select>
+						</section>
+				<!-- Slider Menu -->
+						<section id="ability">
+						  <label for="ability">Please pick your running ability.</label>
+						  <div class="slidecontainer">
+							<input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+							<p>Ability: <span id="demo"></span></p>
+						  </div>
+						</section>
+				<!-- Emergency Contact -->
+						<section id="emergency">
+						  <h2>Emergency Contact</h2>
+						  <section id="othercontact">
+							<input type="text" name="othername" placeholder="Full Name...">
+							<input type="text" name="phone" placeholder="Phone...">
+							<input type="text" name="phone2" placeholder="Phone 2...">
+							<input type="text" name="email" placeholder="Email...">
+						  </section>
+						</section>
+					   <input class="button" type="submit" value="Register">
+					  </form>
+					</div>
+			</section>
+			
+
 			<section id="race_detail">
 				<section id="race_info">
+					<img src="img/Yokahoma Marathon Logo.png" width="30%" height="auto">
 					<h3>Yokahoma Marathon 2022</h3>
+					<p>Fri 4th November 2022</p>
+					<p>Central, Yokahoma, Japan</p>
 				</section>
 				<section id="race_card"></section>
 			</section>
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Titillium+Web:ital,wght@1,700&display=swap');
+			</style>
 	</body>
 </html>
