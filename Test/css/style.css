@@ -283,6 +283,7 @@ input[type=submit]:active {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+  color: red; /* Remove later */
 }
 #race_detail > section {
 
