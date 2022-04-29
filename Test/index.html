@@ -28,12 +28,14 @@
 				<div class="container">
 					<!-- Form -->
 					  <form action="/action_page.php">
-						<input type="text" name="firstname" placeholder="First...">
-						<input type="text" name="lastname" placeholder="Last...">
-						<input type="text" name="email" placeholder="Email...">
-						<input type="text" name="phone" placeholder="Phone...">
-						<input type="text" name="gender" placeholder="Gender...">
-						<input type="date" id="DOB" name="birthday">
+						<section id="basic_info"> 
+							<input type="text" name="firstname" placeholder="First Name...">
+							<input type="text" name="lastname" placeholder="Last Name...">
+							<input type="text" name="email" placeholder="Email...">
+							<input type="text" name="phone" placeholder="Phone...">
+							<input type="text" name="gender" placeholder="Gender...">
+							<input type="date" id="DOB" name="birthday">
+						</section> 
 						<!-- Drop Down Menu -->
 						<section id="medquest">
 						  <label for="medical">Do you suffer from any medical conditions?</label>
@@ -41,6 +43,8 @@
 							<option value="yes">Yes</option>
 							<option value="no">No</option>
 						  </select>
+						  <label for="medical">Please give details, if yes.</label>
+						  <textarea style="background-color: transparent;" name="message" v-model="contact.message" rows="3" placeholder="Please provide more information."></textarea>
 						</section>
 				<!-- Slider Menu -->
 						<section id="ability">
@@ -64,8 +68,7 @@
 					  </form>
 					</div>
 			</section>
-			
-
+<!-- Race Detail Section -->
 			<section id="race_detail">
 				<section id="race_info">
 					<img src="img/Yokahoma Marathon Logo.png" width="30%" height="auto">
